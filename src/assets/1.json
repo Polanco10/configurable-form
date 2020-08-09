@@ -1,0 +1,29 @@
+ [
+    {"type": "input", "label": "Nombre", "inputType": "text", "name": "nombre","value":"Nombre",
+      "validations": [
+        { "name": "required", "validator": "Validators.required", "message": "Nombre requerido" }
+
+      ]
+    },    
+    {"type": "input", "label": "Nombre2", "inputType": "text", "name": "nombres"},
+    {"type": "input","label": "Correo","inputType": "email", "name": "email",
+      "validations": [
+        { "name": "required", "validator": "Validators.required", "message": "Email requerido"}
+      ]
+    },
+    {"type": "input", "label": "Password","inputType": "password", "name": "password",
+      "validations": [
+        { "name": "required", "validator": "Validators.required", "message": "Password requerida"}
+      ]
+    },
+    {"type": "radiobutton","label": "Genero", "name": "genero", "options": ["Hombre", "Mujer"], "value": "Hombre"},
+    {"type": "date", "label": "Fecha Nacimiento", "name": "fecha_nacimiento",
+      "validations": [
+        {"name": "required","validator": "Validators.required", "message": "Fecha de nacimiento requerida"}
+      ]
+    },
+
+    {"type": "select", "label": "Pais", "name": "country", "value": "UK", "options": ["India", "UAE", "UK", "US"]},
+    {"type": "checkbox","label": "Aceptar Terminos", "name": "terminos", "value": true},
+    {"type": "button", "label": "Guardar"}
+    ]

@@ -1,0 +1,20 @@
+ [
+    {"type": "input", "label": "Nombrecito", "inputType": "text", "name": "nombre","value":"Nombre",
+      "validations": [
+        { "name": "required", "validator": "Validators.required", "message": "Nombre requerido" }
+      ]
+    },    
+    {"type": "input","label": "Correito","inputType": "email", "name": "email",
+      "validations": [
+        { "name": "required", "validator": "Validators.required", "message": "Email requerido"}
+      ]
+    }, 
+    {"type": "formarray","name": "apellidos", "inputs":[
+      {"type": "input", "label": "labelApellido1", "inputType": "text", "name": "nameapellido1","value":"a1"},
+      {"type": "input", "label": "labelApellido2", "inputType": "text", "name": "nameapellido2","value":"a2"}
+
+    ]},
+
+    {"type": "button", "label": "Guardarcito"}
+
+    ]
